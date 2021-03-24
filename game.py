@@ -49,11 +49,16 @@ while player_choice is False:
 	# Version 1, to explain array indexing
 	#player_choice = choices[1]
 	# it is the same thing ->player_choice = "paper"
-
 	#print("index 1 in the choice array is " + player_choice + ", which is paper")
+
+	print("Choose your weapon! Or type quit to exit\n")
 
 	player_choice = input("Choose rock, paper, or scissors: \n")
 	#player_choice now equals TRUE -> it has value
+
+	if player_choice == "quit":
+		print("You chose to quit")
+		exit()
 
 	print("user chose " + player_choice)
 
