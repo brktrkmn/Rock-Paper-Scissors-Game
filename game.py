@@ -7,7 +7,7 @@
 # Import packages to extend Python (just like we exten Sublime, Atom, VSCode)
 from random import randint
 # re-import our game variables
-from gameComponents import gameVars
+from gameComponents import gameVars, winLose
 
 # define a win / lose function and refer to it (invoke it) in your game loop
 def winorlose(status):
@@ -27,6 +27,7 @@ def winorlose(status):
 			#reset the game loop and start over again
 			gameVars.player_lives = gameVars.total_lives
 			gameVars.computer_lives = gameVars.total_lives
+			gameVars.player_choice = False
 		elif choice == "N" or choice == "n":
 			#exit message and quit
 			print("You chose to quit! Better luck next time!")
@@ -95,10 +96,10 @@ while gameVars.player_choice is False:
 			gameVars.computer_lives -= 1
 
 	if gameVars.player_lives == 0:
-		winorlose("lose")
+		winLose.winorlose("lose")
 
 	if gameVars.computer_lives == 0:
-		winorlose("won") 
+		winLose.winorlose("won") 
 
 	print ("Player lives:", gameVars.player_lives)
 	print ("Computer lives", gameVars.computer_lives)		
