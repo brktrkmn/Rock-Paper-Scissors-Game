@@ -13,6 +13,22 @@ Download the .zip file
 
 ## Author
 Burak Turkmen
+Download the .zip file 
+
+## Author
+Burak Turkmen
+
+## Contact
+b_turkmen@fanshaweonline.ca
+
+## Contributing
+Any contributions you make are greatly appreciated. To contribute;
+
+1-Fork the Project
+2-Create your Feature Branch 
+3-Commit your Changes 
+4-Push to the Branch 
+5-Open a Pull Request
 
 ## Contact
 b_turkmen@fanshaweonline.ca
